@@ -1,0 +1,25 @@
+# Hypothetical FICTIONAL example for testing field presence; not customer research or approved project state.
+venture_id: "DEMO-PAPER-TOOL"
+baseline_version: "DEMO-v0"
+approved_purpose: "Demonstrate a simple way to make a useful A4 paper object at home (hypothetical)."
+customer_outcome: "A prospective maker prints, assembles and uses the object with clear directions."
+task_objective: "Validate dimensions and report untested physical conditions."
+prior_decisions:
+  - "For demonstration only: one first object; restrained editorial interface."
+negative_constraints:
+  - "No colourful dashboard"
+  - "Do not report a digital preview as evidence of physical assembly"
+source_locations:
+  - "examples/making-objects-021.md"
+acceptance:
+  functional:
+    - "Produced example file dimensions conform to declared A4 specification"
+  intention_fidelity:
+    - "Interface review against specified minimal editorial direction"
+permissions:
+  - "Work only in an isolated demonstration folder"
+budget_enforcement: "No external spending authorised; runner must deny paid actions"
+escalation: "Escalate material constraint changes and production deployment"
+owner: "Human operator"
+sensitive_data: false
+least_privilege_scoped: true

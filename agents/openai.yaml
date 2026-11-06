@@ -1,0 +1,6 @@
+interface:
+  display_name: "021 — Zero to One"
+  short_description: "From intent to useful outcomes"
+  default_prompt: "Use $021 to review this project and identify the next useful action, preserving its purpose and constraints."
+policy:
+  allow_implicit_invocation: true

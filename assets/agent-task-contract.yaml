@@ -1,0 +1,42 @@
+# 021 example task contract: replace all placeholders before actual execution.
+task_id: "DEMO-TASK"
+venture_id: "DEMO-VENTURE"
+intention_baseline: "v0.1 (approved / pending must be stated)"
+context_packet: "path/to/context-handoff.md"
+objective: "Verify one bounded, testable outcome"
+customer_outcome: "Description independent of implementation"
+prior_decisions_and_rationale:
+  - id: "DEC-001"
+    source: "path/to/context-ledger.md"
+negative_constraints:
+  - "No live deployment without approval"
+source_requirements:
+  - "Read the linked original reference when relevant"
+inputs: []
+deliverables:
+  - "path/to/output"
+acceptance:
+  functional: []
+  intention_fidelity: []
+  independent_verification: "Specify real tests and reviewer"
+allowed_actions:
+  - "Read authorised project files"
+  - "Write within isolated worktree"
+forbidden_actions:
+  - "External communication"
+  - "Production deployment"
+  - "Financial transactions"
+limits:
+  cost_cap_gbp: 5  # Example only; requires REAL enforcement in the runner/provider.
+  max_attempts: 3
+  hard_limit_enforced_by_runtime: false
+escalate_if:
+  - "Consequential goal or constraint conflict"
+  - "Test blocked or missing required access"
+  - "Limit exceeded or no real enforcement available for proposed risk"
+review_owner: "Human operator"
+return_required:
+  - "Artefact and actual test results"
+  - "Context delta"
+  - "Evidence sources"
+  - "Intention fidelity and unresolved risks"
